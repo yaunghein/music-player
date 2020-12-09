@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music PLayer 02</title>
+    <link rel="shortcut icon" href="" />
+    <script src="https://kit.fontawesome.com/5978db90dc.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="playlist-container"></div>
+      <audio src="" class="audio"></audio>
+      <div class="currentAndTotalTime">00:00 / 00:00</div>
+      <!-- <div id="progressBar">
+        <div id="currentProgress"></div>
+      </div> -->
+      <input type="range" class="rangeSlider" min="0" max="500" value="0" />
+      <div class="playerControls">
+        <i class="fas fa-step-backward controls previousButton"></i>
+        <i class="fas fa-play-circle controls playButton"></i>
+        <i class="far fa-pause-circle controls pauseButton"></i>
+        <i class="fas fa-step-forward controls nextButton"></i>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
