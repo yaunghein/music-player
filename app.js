@@ -34,7 +34,7 @@ for (let i = 0; i < songs.length; i++) {
 
   audioTag.onended = () => {
     checkActiveSong();
-    if ((currentPlayIndex = songs.length - 1)) {
+    if (currentPlayIndex === songs.length - 1) {
       currentPlayIndex = -1;
     }
     currentPlayIndex += 1;
@@ -151,7 +151,6 @@ const playSong = () => {
   const path = songs[currentPlayIndex].songPath;
   audioTag.src = path;
   audioTag.play();
-  isPlaying = true;
   song = playlistContainer.children[currentPlayIndex];
   song.classList.add("active-song");
 };
